@@ -18,3 +18,5 @@ function DrinkTopping () {
     var Topping = prompt ("What topping would you like for your drink?")
     document.getElementById ("Topping").innerHTML = Topping ;
 }
+
+ /* Need to ask Kit how to roll these into a singular function rather than them being a bunch of separate ones, */
