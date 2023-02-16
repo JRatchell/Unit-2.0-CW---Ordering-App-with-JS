@@ -1,9 +1,5 @@
 
 
-function DrinkIceLevel () {
-    let iceLevel = prompt ("About how much ice would you like in your drink?")
-    document.getElementById("Ice").innerHTML = iceLevel ;
-}
 
 
 
@@ -91,6 +87,29 @@ function orderUp() {
             document.getElementById("Size").innerHTML= "Please enter a valid drink size"
             break;
     }
+
+    let iceLevel = prompt ("About how much ice would you like in your drink?")
+    const ice1 = "0%"
+    const ice2 = "25%"
+    const ice3 = "50%"
+    switch (iceLevel) {
+        case ice1:
+            document.getElementById("Ice").innerHTML = iceLevel ;
+            break;
+        
+        case ice2:
+            document.getElementById("Ice").innerHTML = iceLevel ;
+            break;
+
+        case ice3:
+            document.getElementById("Ice").innerHTML = iceLevel ;
+            break;
+
+        default:
+            document.getElementById("Ice").innerHTML = "Please Enter a valid ice level"
+            break;
+    }
+    
 }
 
 
@@ -114,4 +133,9 @@ let drinkChoice = prompt ("Which drink would you like to order?");
 /*function drinkSize() {
     let sizeChoice = prompt ("What Size would you like your drink to be?")
     document.getElementById("Size").innerHTML= sizeChoice ;
+}*/
+
+/*function DrinkIceLevel () {
+    let iceLevel = prompt ("About how much ice would you like in your drink?")
+    document.getElementById("Ice").innerHTML = iceLevel ;
 }*/
